@@ -9,12 +9,12 @@ echo "Running day$DAY"
 cd "day$DAY" || { exit 1; }
 
 FILE="main.cpp"
-
-g++ "$FILE" -o output
+g++ "$FILE" -o output -std=c++14
 
 if [ $? -ne 0 ]; then
     exit 1
 fi
+
 
 ./output
 rm ./output
