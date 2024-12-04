@@ -19,7 +19,7 @@ int part1() {
   vector<string> lines = {};
   read_file("input.txt", &lines);
   smatch match;
-  regex e(R"(mul\((-?\d+),(-?\d+)\))");
+  regex e(R"(mul\((\d+),(\d+)\))");
   int sum = 0;
   for (string line : lines) {
     while (regex_search(line, match, e)) {
