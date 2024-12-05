@@ -1,6 +1,5 @@
 #include <fstream>
 #include <iostream>
-#include <tuple>
 using namespace std;
 
 void read_file(string filename, vector<string> *lines) {
